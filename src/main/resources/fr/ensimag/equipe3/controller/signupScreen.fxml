@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.ensimag.equipe3.controller.SignupController">
+   <center>
+      <VBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="5.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Pas encore de compte ? Inscris-toi !">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </HBox>
+            <Text fx:id="_status" />
+            <Label text="Adresse e-mail :" />
+            <TextField fx:id="_email" onAction="#onEnter" />
+            <Label text="Prénom :" />
+            <TextField fx:id="_firstName" onAction="#onEnter" />
+            <Label text="Nom :" />
+            <TextField fx:id="_name" onAction="#onEnter" />
+            <Label text="Genre :" />
+            <HBox spacing="25.0">
+               <children>
+                  <RadioButton fx:id="_radioMale" mnemonicParsing="false" selected="true" text="Homme">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="group1" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="_radioFemale" mnemonicParsing="false" text="Femme" toggleGroup="$group1" />
+                  <RadioButton fx:id="_radioUnspecified" mnemonicParsing="false" text="Non spécifié" toggleGroup="$group1" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" spacing="40.0">
+               <children>
+                  <VBox>
+                     <children>
+                        <Label text="Code Postal :" />
+                        <TextField fx:id="_postalCode" onAction="#onEnter" />
+                     </children>
+                  </VBox>
+                  <VBox>
+                     <children>
+                        <Label text="Ville de résidence :" />
+                        <ComboBox fx:id="_city" prefWidth="150.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <Label text="Mot de passe :" />
+            <PasswordField fx:id="_password" onAction="#onEnter" />
+            <Label text="Confirmation du mot de passe :" />
+            <PasswordField fx:id="_confirmPassword" onAction="#onEnter" />
+            <HBox alignment="CENTER_RIGHT">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#inscription" text="S'inscrire" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT">
+               <children>
+                  <Text fx:id="_accountLink" fill="BLUE" onMouseClicked="#toLogin" strokeType="OUTSIDE" strokeWidth="0.0" text="Tu as déjà un compte ? Connecte-toi !" textAlignment="CENTER" underline="true">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets left="25.0" right="25.0" />
+         </padding>
+      </VBox>
+   </center>
+</BorderPane>

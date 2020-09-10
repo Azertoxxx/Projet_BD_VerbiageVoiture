@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.ensimag.equipe3.controller.PathInfoController">
+   <left>
+      <VBox prefHeight="400.0" prefWidth="188.0" style="-fx-border-style: solid;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="129.0" prefWidth="188.0" spacing="10.0">
+               <children>
+                  <ImageView fx:id="_avatar" fitHeight="149.0" fitWidth="127.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@male.png" />
+                     </image>
+                  </ImageView>
+                  <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Text fx:id="_firstName" strokeType="OUTSIDE" strokeWidth="0.0" text="Prénom" />
+                        <Text fx:id="_name" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom" />
+                     </children>
+                     <padding>
+                        <Insets right="10.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-border-style: solid; -fx-background-color: lightgray;">
+               <children>
+                  <Text fx:id="_vehiclesLink" onMouseClicked="#toVehicules" strokeType="OUTSIDE" strokeWidth="0.0" text="Mes véhicules">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-border-style: solid; -fx-background-color: lightgray;">
+               <children>
+                  <Text fx:id="_walletLink" onMouseClicked="#toWallet" strokeType="OUTSIDE" strokeWidth="0.0" text="Mon porte-monnaie">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-border-style: solid; -fx-background-color: lightgray;">
+               <children>
+                  <Text fx:id="_courseLink" onMouseClicked="#toPathList" strokeType="OUTSIDE" strokeWidth="0.0" text="Mes trajets">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-border-style: solid; -fx-background-color: lightgray;">
+               <children>
+                  <Text fx:id="_logoutLink" onMouseClicked="#logout" strokeType="OUTSIDE" strokeWidth="0.0" text="Déconnexion">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <top>
+            <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="15.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Text onMouseClicked="#toSearchCourse" strokeType="OUTSIDE" strokeWidth="0.0" text="Rechercher un trajet">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <Text onMouseClicked="#toNewPath" strokeType="OUTSIDE" strokeWidth="0.0" text="Proposer un trajet" textAlignment="CENTER">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+               </children>
+               <padding>
+                  <Insets right="25.0" top="10.0" />
+               </padding>
+            </HBox>
+         </top>
+         <center>
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="15.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Text fx:id="_title" strokeType="OUTSIDE" strokeWidth="0.0" text="Titre">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="_status" strokeType="OUTSIDE" strokeWidth="0.0" />
+                  <VBox spacing="5.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Informations globales du trajet" />
+                        <GridPane gridLinesVisible="true" hgap="15.0">
+                          <columnConstraints>
+                            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Départ" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Arrivée" GridPane.columnIndex="1" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Etat du trajet" GridPane.columnIndex="2" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre de tronçons" GridPane.columnIndex="3" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Véhicule" GridPane.columnIndex="4" />
+                              <Text fx:id="_startPath" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.rowIndex="1" />
+                              <Text fx:id="_endPath" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <Text fx:id="_statePath" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                              <Text fx:id="_stepsPath" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                              <Text fx:id="_vehiclePath" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                           </children>
+                        </GridPane>
+                     </children>
+                  </VBox>
+                  <VBox spacing="5.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Liste des tronçons associés" />
+                        <TableView fx:id="_sectionsList" prefHeight="200.0" prefWidth="200.0">
+                          <columns>
+                              <TableColumn fx:id="_sectionId" prefWidth="75.0" text="Id" visible="false" />
+                            <TableColumn fx:id="_startSection" prefWidth="75.0" text="Départ" />
+                            <TableColumn fx:id="_endSection" prefWidth="75.0" text="Arrivée" />
+                              <TableColumn fx:id="_hourSection" prefWidth="75.0" text="Heure de départ" />
+                              <TableColumn fx:id="_estimatedTime" prefWidth="75.0" text="Durée estimée" />
+                              <TableColumn fx:id="_startValidated" prefWidth="75.0" text="Départ validé" />
+                              <TableColumn fx:id="_endValidated" prefWidth="75.0" text="Arrivée validée" />
+                          </columns>
+                           <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                           </columnResizePolicy>
+                        </TableView>
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets left="25.0" right="25.0" />
+               </padding>
+            </VBox>
+         </center>
+      </BorderPane>
+   </center>
+</BorderPane>

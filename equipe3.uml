@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>fr.ensimag.equipe3</OriginalElement>
+  <nodes>
+    <node x="969.0883771929824" y="1047.0">fr.ensimag.equipe3.LoginMain</node>
+    <node x="681.6226973684209" y="991.0">fr.ensimag.equipe3.controller.LoginController</node>
+    <node x="1160.0883771929825" y="1002.5">fr.ensimag.equipe3.controller.HomeController</node>
+    <node x="389.28881578947363" y="250.5">fr.ensimag.equipe3.model.DAO.Dao</node>
+    <node x="25.288815789473574" y="196.0">fr.ensimag.equipe3.model.DAO.ConnectionDB</node>
+    <node x="697.9633771929825" y="0.0">fr.ensimag.equipe3.model.Gender</node>
+    <node x="325.81973684210516" y="575.5">fr.ensimag.equipe3.model.DAO.UserDAO</node>
+    <node x="657.7133771929824" y="150.0">fr.ensimag.equipe3.model.User</node>
+    <node x="865.8383771929824" y="531.0">fr.ensimag.equipe3.controller.ViewController</node>
+    <node x="397.6226973684209" y="899.0">fr.ensimag.equipe3.controller.SignupController</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="fr.ensimag.equipe3.model.DAO.UserDAO" target="fr.ensimag.equipe3.model.DAO.Dao">
+      <point x="0.0" y="-104.5" />
+      <point x="424.31973684210516" y="471.0" />
+      <point x="460.78881578947363" y="471.0" />
+      <point x="0.0" y="50.0" />
+    </edge>
+    <edge source="fr.ensimag.equipe3.model.User" target="fr.ensimag.equipe3.model.Gender">
+      <point x="-92.24999999999989" y="-150.5" />
+      <point x="0.0" y="50.0" />
+    </edge>
+    <edge source="fr.ensimag.equipe3.controller.HomeController" target="fr.ensimag.equipe3.model.Gender">
+      <point x="58.0" y="-83.0" />
+      <point x="1305.0883771929825" y="879.0" />
+      <point x="1281.5883771929825" y="879.0" />
+      <point x="1281.5883771929825" y="120.0" />
+      <point x="791.5633771929826" y="120.0" />
+      <point x="41.60000000000002" y="50.0" />
+    </edge>
+    <edge source="fr.ensimag.equipe3.model.DAO.UserDAO" target="fr.ensimag.equipe3.model.Gender">
+      <point x="-78.80000000000007" y="-104.5" />
+      <point x="345.5197368421051" y="511.0" />
+      <point x="14.788815789473574" y="511.0" />
+      <point x="14.788815789473574" y="130.0" />
+      <point x="729.1633771929826" y="130.0" />
+      <point x="-20.799999999999955" y="50.0" />
+    </edge>
+    <edge source="fr.ensimag.equipe3.LoginMain" target="fr.ensimag.equipe3.controller.ViewController">
+      <point x="0.0" y="-38.5" />
+      <point x="37.75" y="149.0" />
+    </edge>
+    <edge source="fr.ensimag.equipe3.controller.SignupController" target="fr.ensimag.equipe3.model.Gender">
+      <point x="-105.60000000000002" y="-186.5" />
+      <point x="424.0226973684209" y="879.0" />
+      <point x="0.0" y="879.0" />
+      <point x="0.0" y="120.0" />
+      <point x="708.3633771929825" y="120.0" />
+      <point x="-41.60000000000002" y="50.0" />
+    </edge>
+    <edge source="fr.ensimag.equipe3.controller.HomeController" target="fr.ensimag.equipe3.model.User">
+      <point x="0.0" y="-83.0" />
+      <point x="1247.0883771929825" y="879.0" />
+      <point x="1270.5883771929825" y="879.0" />
+      <point x="1270.5883771929825" y="501.0" />
+      <point x="1003.6508771929824" y="501.0" />
+      <point x="161.4375" y="150.5" />
+    </edge>
+    <edge source="fr.ensimag.equipe3.controller.LoginController" target="fr.ensimag.equipe3.model.User">
+      <point x="0.0" y="-94.5" />
+      <point x="790.6226973684209" y="859.0" />
+      <point x="847.7133771929824" y="859.0" />
+      <point x="847.7133771929824" y="511.0" />
+      <point x="865.2758771929824" y="511.0" />
+      <point x="23.0625" y="150.5" />
+    </edge>
+    <edge source="fr.ensimag.equipe3.controller.SignupController" target="fr.ensimag.equipe3.model.DAO.UserDAO">
+      <point x="-52.799999999999955" y="-186.5" />
+      <point x="476.82269736842096" y="869.0" />
+      <point x="375.06973684210516" y="869.0" />
+      <point x="-49.25" y="104.5" />
+    </edge>
+    <edge source="fr.ensimag.equipe3.controller.ViewController" target="fr.ensimag.equipe3.model.User">
+      <point x="-75.5" y="-149.0" />
+      <point x="941.3383771929824" y="511.0" />
+      <point x="911.4008771929824" y="511.0" />
+      <point x="69.1875" y="150.5" />
+    </edge>
+    <edge source="fr.ensimag.equipe3.controller.LoginController" target="fr.ensimag.equipe3.model.DAO.UserDAO">
+      <point x="-72.66666666666674" y="-94.5" />
+      <point x="717.9560307017541" y="849.0" />
+      <point x="473.56973684210516" y="849.0" />
+      <point x="49.25" y="104.5" />
+    </edge>
+    <edge source="fr.ensimag.equipe3.controller.SignupController" target="fr.ensimag.equipe3.controller.ViewController">
+      <point x="105.60000000000002" y="-186.5" />
+      <point x="635.222697368421" y="869.0" />
+      <point x="903.5883771929824" y="869.0" />
+      <point x="-113.25" y="149.0" />
+    </edge>
+    <edge source="fr.ensimag.equipe3.controller.SignupController" target="fr.ensimag.equipe3.model.User">
+      <point x="0.0" y="-186.5" />
+      <point x="529.6226973684209" y="879.0" />
+      <point x="550.522697368421" y="879.0" />
+      <point x="550.522697368421" y="501.0" />
+      <point x="773.0258771929824" y="501.0" />
+      <point x="-69.1875" y="150.5" />
+    </edge>
+    <edge source="fr.ensimag.equipe3.model.DAO.UserDAO" target="fr.ensimag.equipe3.model.DAO.ConnectionDB">
+      <point x="-39.400000000000034" y="-104.5" />
+      <point x="384.9197368421051" y="501.0" />
+      <point x="197.28881578947357" y="501.0" />
+      <point x="0.0" y="104.5" />
+    </edge>
+    <edge source="fr.ensimag.equipe3.controller.LoginController" target="fr.ensimag.equipe3.controller.ViewController">
+      <point x="72.66666666666663" y="-94.5" />
+      <point x="863.2893640350876" y="879.0" />
+      <point x="979.0883771929824" y="879.0" />
+      <point x="-37.75" y="149.0" />
+    </edge>
+    <edge source="fr.ensimag.equipe3.model.DAO.UserDAO" target="fr.ensimag.equipe3.model.User">
+      <point x="39.39999999999998" y="-104.5" />
+      <point x="463.71973684210514" y="481.0" />
+      <point x="680.7758771929824" y="481.0" />
+      <point x="-161.4375" y="150.5" />
+    </edge>
+    <edge source="fr.ensimag.equipe3.controller.HomeController" target="fr.ensimag.equipe3.controller.ViewController">
+      <point x="-58.0" y="-83.0" />
+      <point x="1189.0883771929825" y="879.0" />
+      <point x="1130.0883771929825" y="879.0" />
+      <point x="113.25" y="149.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.5541795665634675" x="667.5" y="636.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
